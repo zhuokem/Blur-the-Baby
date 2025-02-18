@@ -27,7 +27,7 @@ Despite the setback, we still needed to detect the remaining faces that posed a 
 
 What if there were advantages to both models, where we would have even higher accuracy with the combination of the strengths of both, with a faster computational speed. Combining YuNet and RetinaFace’s face detection may help us achieve the 100% for the challenge cases we had in the beginning. Thus, we try the ensemble of the two, by running RetinaFace on only the frames that YuNet missed or felt less confident about, therefore maximizing its speed based on only what is necessary. We also try another ensemble method where we run both RetinaFace and YuNet, and weight the one that has the most accurate detection through an intersection and union of both models. 
 
-![alt text]([https://github.com/zhuokem/Blur-the-Baby/blob/main/Visual%20of%20Ensemble%20Model%20Working.png])
+![alt text]([https://github.com/zhuokem/Blur-the-Baby/blob/main/Visual of Ensemble Model Working.png])
 
 | Metric | YuNet    | RetinaFace   | BTB w/ Intersection and Union   | BTB w/ YuNet as first pass and RetinaFace as second pass   |
 | :---:   | :---: | :---: | :---: | :---: |
