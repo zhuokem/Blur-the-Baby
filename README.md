@@ -25,6 +25,12 @@ Despite the setback, we still needed to detect the remaining faces that posed a 
 
 What if there were advantages to both models, where we would have even higher accuracy with the combination of the strengths of both, with a faster computational speed. Combining YuNet and RetinaFace’s face detection may help us achieve the 100% for the challenge cases we had in the beginning. Thus, we try the ensemble of the two, by running RetinaFace on only the frames that YuNet missed or felt less confident about, therefore maximizing its speed based on only what is necessary. We also try another ensemble method where we run both RetinaFace and YuNet, and weight the one that has the most accurate detection through an intersection and union of both models. 
 
+| Metric | YuNet    | RetinaFace   | BTB w/ Intersection and Union   | BTB w/ YuNet as first pass and RetinaFace as second pass   |
+| :---:   | :---: | :---: | :---: | :---: |
+| Number of Frames (with and without human faces) | 14,434   | 14,434   | 14,434   | 14,434   |
+| Number of Frames (with and without human faces) | 11,066 |15,456 |15,479 |~15,400 |
+|Time to Blur |5.95 minutes |2.72 hours |2.75 hours |1 hour|
+
 Based on the performance of these models (assessed by number of confident faces detected and also a manual view of the videos post-blurring to see if there are any undetected faces that would violate the privacy), we see that the multi-scale approach of these models significantly improves the ability to detect infant to child faces. However, because there are flaws in both models, we hope to make a happy medium that takes advantage of each model’s strengths where appropriate. We see that the ensemble performed better in the number of faces detected of high confidence (0.9 at least) and even detected additional faces beyond what RetinaFace alone could detect, contrary to what we originally thought. However, it takes too long, so the model that only feeds data that YuNet is not confident about to RetinaFace achieves the same number of faces but takes less than half the time! 
 
 With this, we demonstrated the benefit of seeing a middle ground to some models in speed and accuracy, so that we can help scale these sorts of solutions to more problems in the future. The hope is that this project also inspires handling transitions/animations more robustly as videos increase the variations of orientations/scales especially if it were 60 fps.
