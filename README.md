@@ -28,8 +28,8 @@ What if there were advantages to both models, where we would have even higher ac
 | Metric | YuNet    | RetinaFace   | BTB w/ Intersection and Union   | BTB w/ YuNet as first pass and RetinaFace as second pass   |
 | :---:   | :---: | :---: | :---: | :---: |
 | Number of Frames (with and without human faces) | 14,434   | 14,434   | 14,434   | 14,434   |
-| Number of Frames (with and without human faces) | 11,066 |15,456 |15,479 |~15,400 |
-|Time to Blur |5.95 minutes |2.72 hours |2.75 hours |1 hour|
+| Number of Faces (Human or Not) Detected | 11,066 |15,456 |15,479 |~15,400 |
+| Time to Blur |5.95 minutes |2.72 hours |2.75 hours |1 hour|
 
 Based on the performance of these models (assessed by number of confident faces detected and also a manual view of the videos post-blurring to see if there are any undetected faces that would violate the privacy), we see that the multi-scale approach of these models significantly improves the ability to detect infant to child faces. However, because there are flaws in both models, we hope to make a happy medium that takes advantage of each model’s strengths where appropriate. We see that the ensemble performed better in the number of faces detected of high confidence (0.9 at least) and even detected additional faces beyond what RetinaFace alone could detect, contrary to what we originally thought. However, it takes too long, so the model that only feeds data that YuNet is not confident about to RetinaFace achieves the same number of faces but takes less than half the time! 
 
