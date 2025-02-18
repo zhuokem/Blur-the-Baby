@@ -29,7 +29,8 @@ Based on the performance of these models (assessed by number of confident faces 
 
 With this, we demonstrated the benefit of seeing a middle ground to some models in speed and accuracy, so that we can help scale these sorts of solutions to more problems in the future. The hope is that this project also inspires handling transitions/animations more robustly as videos increase the variations of orientations/scales especially if it were 60 fps.
 
-References:
+# References:
+
 Yang, S., Luo, P., Loy, C. C., & Tang, X. (2016). WIDER FACE: A face detection benchmark. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 5525–5533. http://shuoyang1213.me/WIDERFACE/
 
 
