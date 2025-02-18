@@ -1,5 +1,5 @@
 # Blur-the-Baby
-## Ensemble Method to Detect, Deidentify, and Blur Faces in Videos Automatically
+## Optimizing face detection machine (deep) learning tools for infant and child faces in video data for data de-identification (and face tracking purposes)
 
 Demo of the face detection and blurring on video: https://drive.google.com/file/d/115nT6ytIaGr_e2PAyakU_4yG_iZp4Jqn/view?usp=sharing 
 
