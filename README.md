@@ -1,5 +1,5 @@
 # Blur-the-Baby
-Ensemble Method to Detect, Deidentify, and Blur Faces in Videos Automatically
+# # Ensemble Method to Detect, Deidentify, and Blur Faces in Videos Automatically
 
 Improving facial detection for infants and children in videos and image data helps de-identify data to protect privacy of minors. This is especially important when infants and children are not making these decisions for themselves during a period where, once data is shared, there’s no telling where it could end up. Lacking a way to de-identify faces not only has privacy risks in the future when these minors become adults, but lack of sharing these data within the research community stifles innovation because of privacy concerns of sharing identifiable data. Failure to abide by privacy laws can lead to high penalties, so there is a vested interest in improving our ability to de-identify data. A way to better detect child faces at scale (i.e., from videos) with greater accuracy without too much computational demand would help overcome the obstacle with more certainty. We hypothesize that there will be face detection models that better detect some features characteristic of infants and children and can leverage those to optimize object classification for this age group. This may mean we need more sophisticated ways to be able to detect their faces in photos and videos. 
 
